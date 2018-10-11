@@ -10,7 +10,7 @@ def InitParams():
    #
    # contenu du mail
    #
-   params["Sujet"] = "OSGeo-fr"
+   params["Sujet"] = "FOSS4G-fr 2018"
    # emplacement du fichier logo inséré après la signature
    params["Logo"] = "logo\\osgeo.fr.svg-222x85.png"
    #
@@ -43,25 +43,85 @@ def InitParams():
    # ATTENTION: à respecter l'ordre Prénom,Nom ou Nom,Prénom dans le fichier .csv
    params["TextBody"] = '''Bonjour $1,
 
-Vous êtes géomaticien ou intéressé par l'information géographique.
-Venez nous rejoindre <https://www.osgeo.asso.fr/content/lassociation>
+L'Appel à Présentations du FOSS4G Fr est encore ouvert jusqu'au 15 Mars !
 
-Merci par avance de votre adhésion !
 
-Le bureau de l'association
+https://www.osgeo.asso.fr/foss4gfr-2018/programme.html
+
+
+Nous te contactons car, sur l'une des éditions précédentes du FOSS4G Fr,
+ta participation via une présentation ou l'animation d'un atelier
+avait contribué au succès de l'événement.
+
+
+Si pour cette nouvelle édition,
+tu as de nouvelles thématiques à partager ou à mettre en avant,
+n'hésites pas à nous pousser une proposition, ou plusieurs, le cas échéant :)
+
+
+N'hésites pas, non plus, à relayer ce message dans tes cercles !
+
+
+Dans les nouveautés saillantes de cette édition,
+une volonté d'ouvrir les thématiques (et donc les publics présents).
+
+
+
+
+Contacts:
+
+Site Web: https://www.osgeo.asso.fr/foss4gfr-2018
+
+Twitter:  @foss4gfr
+
+Mail:     programme@osgeo.asso.fr
+
+
+A bientôt
 '''
 
    # corps du mail en HTML
    # ATTENTION: à respecter l'ordre Prénom,Nom ou Nom,Prénom dans le fichier .csv
    params["HtmlBody"] = '''Bonjour $1,
 <br /><br />
-Vous êtes géomaticien ou intéressé par l'information géographique.
-<a href="https://www.osgeo.asso.fr/content/lassociation">Venez nous rejoindre</a> 
-<br /><br />
-Merci par avance de votre adhésion !
-<br /><br />
-Le bureau de l'association
+L'Appel à Présentations du FOSS4G Fr est encore ouvert jusqu'au 15 Mars !
+<br />
+<a href="https://www.osgeo.asso.fr/foss4gfr-2018/programme.html">https://www.osgeo.asso.fr/foss4gfr-2018/programme.html</a>
+<br />
+<br />
+Nous te contactons car, sur l'une des éditions précédentes du FOSS4G Fr,
+ta participation via une présentation ou l'animation d'un atelier
+avait contribué au succès de l'événement.
+<br />
+<br />
 
+Si pour cette nouvelle édition,
+tu as de nouvelles thématiques à partager ou à mettre en avant,
+n'hésites pas à nous pousser une proposition, ou plusieurs, le cas échéant :)
+<br />
+<br />
+
+N'hésites pas, non plus, à relayer ce message dans tes cercles !
+<br />
+<br />
+
+Dans les nouveautés saillantes de cette édition,
+une volonté d'ouvrir les thématiques (et donc les publics présents).
+
+<br />
+
+<br />
+
+Contacts:
+<br />
+Site Web: <a href="https://www.osgeo.asso.fr/foss4gfr-2018/">https://www.osgeo.asso.fr/foss4gfr-2018</a>
+<br />
+Twitter:  <a href="https://twitter.com/osgeofr">@foss4gfr</a>
+<br />
+Mail:     <a href="mailto:programme@osgeo.asso.fr">programme@osgeo.asso.fr</a>
+<br />
+<br />
+A bientôt
 '''
    return params
 
