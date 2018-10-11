@@ -10,7 +10,7 @@ def InitParams():
    #
    # contenu du mail
    #
-   params["Sujet"] = "OSGeo-fr"
+   params["Sujet"] = "FOSS4G-fr 2018"
    # emplacement du fichier logo inséré après la signature
    params["Logo"] = "logo\\osgeo.fr.svg-222x85.png"
    #
@@ -43,24 +43,43 @@ def InitParams():
    # ATTENTION: à respecter l'ordre Prénom,Nom ou Nom,Prénom dans le fichier .csv
    params["TextBody"] = '''Bonjour $1,
 
-Vous êtes géomaticien ou intéressé par l'information géographique.
-Venez nous rejoindre <https://www.osgeo.asso.fr/content/lassociation>
+Nous vous avons sollicité(e) il y a une dizaine de jours afin d'avoir vos retours sur la dernière édition du FOSS4G-fr.
 
-Merci par avance de votre adhésion !
+Vous avez été nombreux à participer mais quelques uns manquent à l'appel !
 
-Le bureau de l'association
+*Vous avez jusqu'au 12 juin pour y répondre <https://goo.gl/forms/Jn4inQHfdnSoL8853> !*
+			
+Votre avis est important pour les prochaines éditions et cela ne vous prendra que quelques minutes.
+
+Nous partagerons avec vous les résultats rapidement.
+
+Merci par avance de votre participation !
+
+L'équipe organisatrice du @FOSS4Gfr
+
+/Si vous avez déjà répondu à notre sondage, ne tenez pas
+            compte de cet email./
 '''
 
    # corps du mail en HTML
    # ATTENTION: à respecter l'ordre Prénom,Nom ou Nom,Prénom dans le fichier .csv
    params["HtmlBody"] = '''Bonjour $1,
 <br /><br />
-Vous êtes géomaticien ou intéressé par l'information géographique.
-<a href="https://www.osgeo.asso.fr/content/lassociation">Venez nous rejoindre</a> 
+Nous vous avons sollicité(e) il y a une dizaine de jours afin d'avoir vos retours sur la dernière édition du FOSS4G-fr.
+<br />
+Vous avez été nombreux à participer mais quelques uns manquent à l'appel !
 <br /><br />
-Merci par avance de votre adhésion !
+<strong>Vous avez jusqu'au 12 juin pour y répondre grâce à ce <a href="https://goo.gl/forms/7puTKhZaFthZZ9u93">formulaire</a> !</strong>
+<br />
+Votre avis est important pour les prochaines éditions et cela ne vous prendra que quelques minutes.
 <br /><br />
-Le bureau de l'association
+Nous partagerons avec vous les résultats rapidement.
+<br /><br />
+Merci par avance de votre participation !
+<br /><br />
+L'équipe organisatrice du <a href="https://twitter.com/foss4gfr">@FOSS4Gfr</a>
+<br /><br />
+/Si vous avez déjà répondu à notre sondage, ne tenez pas compte de cet email./
 
 '''
    return params
