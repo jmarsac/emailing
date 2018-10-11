@@ -58,3 +58,5 @@ Le script substituera leurs valeurs aux variables ($1 à $9). Les index commence
  - *$7*: indice du champ csv qui se substitue à *$7* (par défaut *-1*)
  - *$8*: indice du champ csv qui se substitue à *$8* (par défaut *-1*)
  - *$9*: indice du champ csv qui se substitue à *9$* (par défaut *-1*)
+ 
+ **Chaque branche correspond à un mail particulier**
