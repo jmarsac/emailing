@@ -10,7 +10,7 @@ def InitParams():
    #
    # contenu du mail
    #
-   params["Sujet"] = "OSGeo-fr"
+   params["Sujet"] = "FOSS4G-fr 2018"
    # emplacement du fichier logo inséré après la signature
    params["Logo"] = "logo\\osgeo.fr.svg-222x85.png"
    #
@@ -43,26 +43,58 @@ def InitParams():
    # ATTENTION: à respecter l'ordre Prénom,Nom ou Nom,Prénom dans le fichier .csv
    params["TextBody"] = '''Bonjour $1,
 
-Vous êtes géomaticien ou intéressé par l'information géographique.
-Venez nous rejoindre <https://www.osgeo.asso.fr/content/lassociation>
+$2 est sponsor Or du FOSS4G-FR 2018 qui a lieu la semaine prochaine. A ce titre, un créneau vous est réservé pour une présentation de 15 mn.
 
-Merci par avance de votre adhésion !
+Afin de ne pas perdre de temps lors de votre présentation, nous vous proposons de nous transmettre au plus vite votre support pour la rendre disponible sur les ordinateurs des amphithéâtres.
+Merci de l'adresser à foss4gfr@osgeo.asso.fr
+Pour des raisons de sécurité il n'est pas possible de faire de démo en ligne ; privilégier les vidéos depuis le PDF (format avi)
+Afin de nous faciliter la vie, voici les consignes de nommage de votre support  :
 
-Le bureau de l'association
+(16|17)mai_(Cauchy|Picard|Bienvenue)_NomPConférencier-Structure.extension
+
+A titre d'exemple : 16mai_Cauchy_Bossaert-CENLR.pdf
+
+Nous vous rappelons qu'il n'y aura pas d'accès Internet depuis les ordinateurs mis à disposition pour les présentations.
+
+Pensez également à apporter deux totems à placer dans chacun des grands amphis de la conférence.
+
+Vous pourrez installer votre stand dès lundi 14 de 16h à 18h ou mardi 15 à partir de 9h. Le réseau ne sera opérationnel que mardi 15 au matin.
+
+Un plan d'implantation du site est disponible : <https://github.com/OSGeo-fr/FOSS4G-fr/blob/master/logistique/foss4g-fr-2018.pdf>
+
+En vous remerciant encore de votre soutien, à bientôt.
+L'équipe organisatrice du @FOSS4Gfr,
 '''
 
    # corps du mail en HTML
    # ATTENTION: à respecter l'ordre Prénom,Nom ou Nom,Prénom dans le fichier .csv
    params["HtmlBody"] = '''Bonjour $1,
 <br /><br />
-Vous êtes géomaticien ou intéressé par l'information géographique.
-<a href="https://www.osgeo.asso.fr/content/lassociation">Venez nous rejoindre</a> 
+$2 est sponsor Or du FOSS4G-FR 2018 qui a lieu la semaine prochaine. A ce titre, un créneau vous est réservé pour une présentation de 15 mn.
 <br /><br />
-Merci par avance de votre adhésion !
+Afin de ne pas perdre de temps lors de votre présentation, nous vous proposons de nous transmettre au plus vite votre support pour la rendre disponible sur les ordinateurs des amphithéâtres.
 <br /><br />
-Le bureau de l'association
+Merci de l'adresser à <a href="mailto:foss4gfr@osgeo.asso.fr">foss4gfr@osgeo.asso.fr</a>
+<br /><br />
+Pour des raisons de sécurité il n'est pas possible de faire de démo en ligne ; privilégier les vidéos depuis le PDF (format avi)
+<br /><br />
+<strong>Afin de nous faciliter la vie, voici les consignes de nommage de votre support </strong> :
+<br /><br />
+(16|17)mai_(Cauchy|Picard|Bienvenue)_NomPConférencier-Structure.extension
+<br /><br />
+A titre d'exemple : 16mai_Cauchy_Bossaert-CENLR.pdf
+<br /><br />
+Nous vous rappelons qu'il n'y aura pas d'accès Internet depuis les ordinateurs mis à disposition pour les présentations.
+<br /><br /><br />
+Pensez également à apporter deux totems à placer dans chacun des grands amphis de la conférence.
+<br /><br />
+Vous pourrez installer votre stand dès lundi 14 de 16h à 18h ou mardi 15 à partir de 9h. Le réseau ne sera opérationnel que mardi 15 au matin.
+<br /><br />
+Un <a href="https://github.com/OSGeo-fr/FOSS4G-fr/blob/master/logistique/foss4g-fr-2018.pdf">plan d'implantation du site est disponible</a>
+<br /><br />
 
-'''
+En vous remerciant encore de votre soutien, à bientôt.<br /><br />
+L'équipe organisatrice du <a href="https://twitter.com/foss4gfr">@FOSS4Gfr</a>'''
    return params
 
 def main():
