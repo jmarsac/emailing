@@ -1,0 +1,6 @@
+smtp:
+    server: smtp.googlemail.com
+    user:   pierre.nord@exemple.fr
+    port:   587
+    nbmax:  15
+    delay:  150
