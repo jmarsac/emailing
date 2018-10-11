@@ -1,8 +1,9 @@
 # À propos d'emailing
 
 **emailing.py** est un script **python3** utilisé pour envoyer des emails sans avoir besoin d'autre chose qu'un compte email et un fichier csv contenant au moins les adresses email de vos destinataires.
-Presque tous les paramètres sont définis dans le fichier *parameters. py*. 
-Il est possible de l'exécuter en lui donnant le chemin du fichier csv et le mot de passe de votre compte de messagerie:
+Les paramètres de connexion sont définis dans un fichier .yml (à l'exclusion du mot de passe qui doit être passé en argument de la ligne de commande.
+Les autres paramètres, notamment le libellé du courriel, sont définis dans le fichier *parameters. py*. 
+Il est possible de l'exécuter en lui donnant le chemin du fichier csv et le nom du fichier de connexion (.yml) ainsi que le mot de passe de votre compte de messagerie:
 
     python emailing.py --csvfile="adresses.csv" --server="smtp.yml" --password="motdepasse".
 
@@ -11,9 +12,9 @@ Il est possible de l'exécuter en lui donnant le chemin du fichier csv et le mot
 Dans un fichier YAML (ex: smtp.yml)
  - *server*: nom du serveur de messagerie ("smtp.googlemail.com")
  - *port*: numéro de port (587)
- - *user*: Identifiant de connexion au compte mail
- - *nbmax*: nombre maximum de mails envoyés avant délai (10)
- - *delay*: délai en secondes entre chaque série de *NbMax* mails (200)
+ - *user*: identifiant de connexion au compte mail
+ - *nbmax*: nombre maximum de mails envoyés avant une pause de *delay* secondes (10)
+ - *delay*: délai en secondes entre chaque série de *nbmax* mails (200)
 
 ## Paramètres généraux:
 
